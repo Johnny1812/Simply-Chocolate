@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Simply Chocolate</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -13,7 +20,7 @@
     <header class="header">
       <nav class="header-nav">
         <a class="header-logo" href=""
-          >SIMPLY CHOCOLATE
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
           <img
             class="header-logo-icon"
             src="./images/chocolate_icon.svg"
@@ -75,16 +82,14 @@
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button class="hero-title-btn" type="button">
-          <a class="" href="">Buy now</a>
-        </button>
+        <button class="hero-title-btn" type="button">Buy now</button>
         <a class="hero-how" href="">How it’s made</a>
         <a class="hero-scroll" href="">scroll down</a>
       </section>
 
       <!--FEATURES-->
       <section class="features">
-        <h2 hidden>Features</h2>
+        <h2 class="visually-hidden">Features</h2>
         <ul class="features-list">
           <li class="features-item">
             <h3 class="features-subtitle">Unsurpassed taste</h3>
@@ -119,8 +124,8 @@
 
       <!--TASTE-->
       <section class="taste">
-        <h2 class="taste-title">
-          IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION
+        <h2 class="taste-title section-title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
         </h2>
         <p class="taste-title-txt">
           At Simply Chocolate, we believe that the secret to exceptional
@@ -204,7 +209,7 @@
 
       <!--MADE-->
       <section class="made">
-        <h2 class="made-title">hOW IT’S made?</h2>
+        <h2 class="made-title section-title">hOW IT’S <span>made?</span></h2>
         <img
           class="made-title-pic"
           src="./images/howitsmade.jpg"
@@ -250,7 +255,7 @@
 
       <!--PRODUCTS-->
       <section class="products">
-        <h2 class="products-title">Our pRODUCTS</h2>
+        <h2 class="products-title section-title">Our <span>pRODUCTS</span></h2>
         <ul class="product-list">
           <li class="product-item">
             <img
@@ -353,7 +358,7 @@
 
       <!--SELLERS-->
       <section class="sellers">
-        <h2 class="sellers-title">tOp Sellers</h2>
+        <h2 class="sellers-title section-title"><span>tOp</span> Sellers</h2>
         <ul class="sellers-list">
           <li class="sellers-item">
             <img
@@ -390,7 +395,9 @@
 
       <!--TEAM-->
       <section class="team">
-        <h2 class="team-title">chocolate is loved</h2>
+        <h2 class="team-title section-title">
+          <span>chocolate</span> is loved
+        </h2>
         <ul class="team-list">
           <li class="team-item">
             <img
@@ -443,20 +450,39 @@
 
     <!--FOOTER-->
     <footer class="footer">
-      <p class="footer-disc">Chocolate a delicious cure for a bad day</p>
+      <p class="footer-disc">
+        <span>Chocolate</span> a delicious cure for a bad day
+      </p>
 
       <p class="footer-soc">Social networks</p>
       <ul class="footer-list">
         <li class="footer-item">
-          <a class="footer-soc-linc" href="" target="_blank" rel="noopener noreferrer">
+          <a
+            class="footer-soc-linc"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             inst</a
           >
         </li>
         <li class="footer-item">
-          <a class="footer-soc-linc" href="" target="_blank" rel="noopener noreferrer"> fb</a>
+          <a
+            class="footer-soc-linc"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            fb</a
+          >
         </li>
         <li class="footer-item">
-          <a class="footer-soc-linc" href="" target="_blank" rel="noopener noreferrer">
+          <a
+            class="footer-soc-linc"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             twit</a
           >
         </li>
@@ -466,7 +492,9 @@
       <address class="contact-address">
         <ul class="contact-address-list">
           <li class="contact-address-item">
-            <a class="contact-address-disc" href="tel:+380684439426">+380 (68) 443-94-26</a>
+            <a class="contact-address-disc" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
           </li>
           <li class="contact-address-item">
             <a class="contact-address-disc" href="mailto:simplychoc@gmail.com"
@@ -489,6 +517,7 @@
           </li>
         </ul>
       </nav>
+      <button class="subscribe-btn" type="button">Subscribe</button>
     </footer>
   </body>
 </html>
