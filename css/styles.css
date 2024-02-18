@@ -2,12 +2,41 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -37,9 +66,17 @@ ul {
   color: #fd9222;
 }
 
-/*-----HEADER------*/
-.header {
+.section-top {
+  padding-top: 120px;
 }
+
+/*-----HEADER------*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .header-nav {
 }
 .header-logo {
@@ -82,8 +119,15 @@ ul {
 }
 
 /*----HERO----*/
+
 .hero {
-  background: rgba(17, 17, 17, 0.6);
+  padding-bottom: 80px;
+}
+
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 
 .hero-title {
@@ -92,6 +136,8 @@ ul {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-title-btn {
@@ -120,6 +166,8 @@ ul {
 /*----FEATURES----*/
 .features {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .features-list {
 }
@@ -130,6 +178,7 @@ ul {
   font-size: 18px;
   color: #fff;
   line-height: normal;
+  margin-bottom: 18px;
 }
 
 .features-text {
@@ -141,9 +190,13 @@ ul {
 }
 
 /*-----TASTE-------*/
+
 .taste {
 }
+
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto 28px;
 }
 
 .taste-title-txt {
@@ -153,6 +206,8 @@ ul {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  margin: 0 auto 50px;
+  max-width: 486px;
 }
 
 .taste-list {
@@ -170,7 +225,9 @@ ul {
 /*------MADE-------*/
 .made {
 }
+
 .made-title {
+  margin-bottom: 50px;
 }
 
 .made-title-pic {
@@ -180,7 +237,9 @@ ul {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
+
 .made-list {
 }
 .made-item {
@@ -191,12 +250,14 @@ ul {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
+  margin-bottom: 24px;
 }
 
 /*------PRODUCTS--------*/
 .products {
 }
 .products-title {
+  margin-bottom: 50px;
 }
 
 .product-list {
@@ -212,6 +273,7 @@ ul {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 2px;
 }
 
 .product-sup-txt {
@@ -220,6 +282,7 @@ ul {
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
 }
 
 .product-btn-price {
@@ -231,7 +294,9 @@ ul {
 /*-------SELLERS-------*/
 .sellers {
 }
+
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
 }
@@ -250,21 +315,29 @@ ul {
 
 /*------TEAM-------*/
 .team {
+  padding-bottom: 120px;
 }
+
 .team-title {
+  margin-bottom: 50px;
 }
+
 .team-list {
+  margin-bottom: 49px;
 }
+
 .team-item {
 }
 .team-pic {
 }
+
 .team-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
 
 .team-txt {
@@ -285,6 +358,8 @@ ul {
 /*--------FOOTER-------*/
 .footer {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-disc {
@@ -293,6 +368,7 @@ ul {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 300px;
 }
 
 .footer-disc span {
