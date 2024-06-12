@@ -9,7 +9,9 @@ a {
 ul {
   list-style: none;
 }
-
+address {
+  font-style: normal;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -134,6 +136,10 @@ ul {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+}
+
+.taste-item:nth-child(2n+1) {
+  color: #ffffff;
 }
 
 /**---------------------MADE---------------*/
