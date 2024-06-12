@@ -10,6 +10,35 @@ ul {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.title span {
+  color: #fd9222;
+}
+
+/**-----------------------HEADER-----------------------------*/
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -30,6 +59,11 @@ ul {
   font-style: italic;
 }
 
+/**-------------------------HERO-----------------------------*/
+.hero {
+  background: rgba(17, 17, 17, 0.6);
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
@@ -39,6 +73,13 @@ ul {
 }
 
 .hero-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-made {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -52,7 +93,12 @@ ul {
   color: #fff;
 }
 
+/**---------------------FEATURES-----------------------------*/
 .features {
+  background: #1e1823;
+}
+
+.features-title {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
@@ -64,4 +110,182 @@ ul {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/**-----------------------TASTE--------------------------*/
+.taste-sensation {
+}
+.taste-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+.taste-list {
+}
+.taste-item {
+}
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/**---------------------MADE---------------*/
+
+.made {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+}
+.made-list {
+}
+.made-item {
+}
+.made-item-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+/**-----------------PRODUCTS---------------*/
+.products {
+}
+
+.products-list {
+}
+.products-item {
+}
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+.products-item-txt {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.products-item-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+/**----------------TOP-----------------*/
+.top {
+}
+
+.top-list {
+}
+.top-item {
+}
+.top-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/**-----------------------LOVED------------------*/
+.loved {
+}
+
+.loved-list {
+}
+.loved-item {
+}
+.loved-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+.loved-item-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.loved-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+/**---------------FOOTER------------------*/
+.foot {
+  background: #1e1823;
+}
+.foot-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.foot-title span {
+  color: #fd9222;
+}
+.foot-soc-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+.foot-contact-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+.foot-contact {
+}
+.foot-contact-list {
+}
+.foot-contact-item {
+}
+.foot-contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.foot-nav {
+}
+.foot-nav-list {
+}
+.foot-nav-item {
+}
+.foot-nav-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
