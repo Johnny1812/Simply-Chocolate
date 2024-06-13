@@ -4,14 +4,34 @@ body {
 
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+
+button {
+  cursor: pointer;
+}
+
 address {
   font-style: normal;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,7 +60,21 @@ address {
   color: #fd9222;
 }
 
+.container {
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /**-----------------------HEADER-----------------------------*/
+
+.head-main {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -63,7 +97,13 @@ address {
 
 /**-------------------------HERO-----------------------------*/
 .hero {
-  background: rgba(17, 17, 17, 0.6);
+  padding-bottom: 80px;
+}
+
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 
 .hero-title {
@@ -72,6 +112,8 @@ address {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-btn {
@@ -97,13 +139,16 @@ address {
 
 /**---------------------FEATURES-----------------------------*/
 .features {
-  background: #1e1823;
+  background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .features-title {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .features-txt {
@@ -116,7 +161,15 @@ address {
 
 /**-----------------------TASTE--------------------------*/
 .taste-sensation {
+  padding-top: 120px;
 }
+
+.taste-title {
+  max-width: 412px;
+  margin-bottom: 28px;
+  margin: 0 auto;
+}
+
 .taste-txt {
   font-weight: 400;
   font-size: 14px;
@@ -124,11 +177,16 @@ address {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
+  max-width: 486px;
+  margin: 0 auto;
 }
+
 .taste-list {
 }
 .taste-item {
 }
+
 .taste-subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -138,13 +196,18 @@ address {
   color: #111;
 }
 
-.taste-item:nth-child(2n+1) {
+.taste-item:nth-child(2n + 1) {
   color: #ffffff;
 }
 
 /**---------------------MADE---------------*/
 
 .made {
+  padding-top: 120px;
+}
+
+.made-title {
+  margin-bottom: 50px;
 }
 
 .made-subtitle {
@@ -153,10 +216,12 @@ address {
   line-height: 1.33;
   color: #111;
 }
+
 .made-list {
 }
 .made-item {
 }
+
 .made-item-txt {
   font-weight: 400;
   font-size: 14px;
@@ -167,12 +232,22 @@ address {
 
 /**-----------------PRODUCTS---------------*/
 .products {
+  padding-top: 120px;
+}
+
+.products-title {
+  margin-bottom: 50px;
 }
 
 .products-list {
 }
 .products-item {
 }
+
+.products-img {
+  margin-bottom: 8px;
+}
+
 .products-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -180,14 +255,18 @@ address {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 2px;
 }
+
 .products-item-txt {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
 }
+
 .products-item-btn {
   font-weight: 600;
   font-size: 14px;
@@ -196,12 +275,22 @@ address {
 
 /**----------------TOP-----------------*/
 .top {
+  padding-top: 120px;
+}
+
+.top-title {
+  margin-bottom: 50px;
 }
 
 .top-list {
 }
 .top-item {
 }
+
+.top-img {
+  margin-bottom: 28px;
+}
+
 .top-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -213,19 +302,27 @@ address {
 
 /**-----------------------LOVED------------------*/
 .loved {
+  padding-top: 120px;
+}
+
+.loved-title {
+  margin-bottom: 50px;
 }
 
 .loved-list {
 }
 .loved-item {
 }
+
 .loved-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
+
 .loved-item-txt {
   font-weight: 400;
   font-size: 14px;
@@ -234,6 +331,7 @@ address {
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
+
 .loved-btn {
   font-weight: 600;
   font-size: 18px;
@@ -244,6 +342,7 @@ address {
 .foot {
   background: #1e1823;
 }
+
 .foot-title {
   font-weight: 500;
   font-size: 28px;
@@ -251,9 +350,11 @@ address {
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+
 .foot-title span {
   color: #fd9222;
 }
+
 .foot-soc-subtitle {
   font-weight: 500;
   font-size: 14px;
@@ -261,6 +362,7 @@ address {
   text-align: center;
   color: #ffffff;
 }
+
 .foot-contact-subtitle {
   font-weight: 500;
   font-size: 14px;
@@ -268,12 +370,14 @@ address {
   text-align: center;
   color: #ffffff;
 }
+
 .foot-contact {
 }
 .foot-contact-list {
 }
 .foot-contact-item {
 }
+
 .foot-contact-link {
   font-weight: 400;
   font-size: 14px;
@@ -282,12 +386,14 @@ address {
   text-align: center;
   color: #ffffff;
 }
+
 .foot-nav {
 }
 .foot-nav-list {
 }
 .foot-nav-item {
 }
+
 .foot-nav-item-link {
   font-weight: 500;
   font-size: 14px;
