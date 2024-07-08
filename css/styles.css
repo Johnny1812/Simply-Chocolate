@@ -1,5 +1,6 @@
 body {
   font-family: Montserrat, sans-serif;
+  background-color: #fafafa;
 }
 
 a {
@@ -30,6 +31,10 @@ button {
 
 address {
   font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -81,6 +86,25 @@ address {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-container {
+  display: flex;
+  gap: 90px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-nav-item-link {
@@ -93,6 +117,11 @@ address {
 
 .header-logo span {
   font-style: italic;
+}
+
+.soc-list {
+  display: flex;
+  gap: 14px;
 }
 
 /**-------------------------HERO-----------------------------*/
@@ -116,14 +145,28 @@ address {
   max-width: 484px;
 }
 
+.hero-all-btn {
+  display: flex;
+  align-items: center;
+}
+
 .hero-btn {
+  padding: 14px 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  cursor: pointer;
+  margin-right: 14px;
 }
 
 .hero-made {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -135,6 +178,7 @@ address {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 /**---------------------FEATURES-----------------------------*/
@@ -159,6 +203,17 @@ address {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.features-list {
+  display: flex;
+  padding-left: 18px;
+  padding-right: 19px;
+  gap: 88px;
+}
+
+.features-item {
+  width: calc((100% - 88px * 2) / 3);
+}
+
 /**-----------------------TASTE--------------------------*/
 .taste-sensation {
   padding-top: 120px;
@@ -177,14 +232,23 @@ address {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
-  margin-bottom: 50px;
   max-width: 486px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
+
 .taste-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  background: #fff;
+  width: calc((100% - 32px * 3) / 4);
+  padding: 28px 23px;
 }
 
 .taste-subtitle {
@@ -194,10 +258,12 @@ address {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  padding-left: 5px;
 }
 
-.taste-item:nth-child(2n + 1) {
-  color: #ffffff;
+.taste-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 /**---------------------MADE---------------*/
@@ -210,16 +276,30 @@ address {
   margin-bottom: 50px;
 }
 
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.made-content {
+  background-color: #ffffff;
+  padding: 32px;
+}
+
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
+  min-width: 350px;
 }
 
 .made-list {
 }
-.made-item {
+
+.made-item:not(:first-child) {
+  margin-top: 24px;
 }
 
 .made-item-txt {
