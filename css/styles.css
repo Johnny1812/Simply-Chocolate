@@ -124,6 +124,15 @@ img {
   gap: 14px;
 }
 
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111;
+}
+
+.header-soc-icon:hover {
+  stroke: #fd9222;
+}
+
 /**-------------------------HERO-----------------------------*/
 .hero {
   padding-bottom: 80px;
@@ -220,6 +229,19 @@ img {
 
 .features-item {
   width: calc((100% - 88px * 2) / 3);
+  position: relative;
+}
+
+.features-item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 124px;
+  right: -44px;
+  top: 0;
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /**-----------------------TASTE--------------------------*/
@@ -370,6 +392,7 @@ img {
   text-transform: uppercase;
   color: #111;
   margin-bottom: 2px;
+  text-align: center;
 }
 
 .products-item-txt {
@@ -379,6 +402,7 @@ img {
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .products-item-btn {
@@ -400,11 +424,43 @@ img {
   display: flex;
   gap: 16px;
 }
+
+.top-cover-wrap-cont {
+  position: relative;
+}
+
 .top-item {
+  width: calc((100% - 16px * 2) / 3);
+  padding-bottom: 28px;
 }
 
 .top-img {
   margin-bottom: 28px;
+}
+
+.top-txt-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 0;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  border-radius: 15px 15px 0 0;
+  width: 368px;
+  height: 464px;
+}
+
+.top-hower-txt {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
 
 .top-subtitle {
@@ -414,6 +470,7 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  text-align: center;
 }
 
 /**-----------------------LOVED------------------*/
