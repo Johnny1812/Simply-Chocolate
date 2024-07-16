@@ -630,11 +630,25 @@ img {
   margin-bottom: 42px;
 }
 
-.modal-title span {
-}
-
 .modal-input {
   width: 100%;
-  width: 437px;
   height: 68px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+
+.modal-input-btn {
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 117px;
+  height: 45px;
+  background: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
 }
