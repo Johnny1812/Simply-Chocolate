@@ -595,6 +595,15 @@ img {
   position: fixed;
   top: 0;
   background-color: rgba(30, 24, 35, 0.615);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -634,6 +643,10 @@ img {
   margin-bottom: 18px;
 }
 
+.modal-input-wrap {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   height: 68px;
@@ -641,8 +654,8 @@ img {
   border: 1.5px solid rgba(17, 17, 17, 0.25);
   background-color: transparent;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
-
-  padding-left: 20px;
+  outline: transparent;
+  padding-left: 62px;
 }
 
 .modal-input-btn {
@@ -670,4 +683,64 @@ img {
   fill: transparent;
   stroke: #404040;
   position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-text {
+  width: 100%;
+  height: 137px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  outline: transparent;
+  padding: 24px 22px;
+  resize: none;
+}
+
+.modal-text:focus {
+  border-color: #fd9222;
+}
+
+.input-check:checked + .check-txt span {
+  background-color: #fd9222;
+  border: none;
+  fill: #ffffff;
+}
+
+.check-txt {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  
+}
+
+.check-txt a {
+  color: #fd9222;
+  text-decoration: underline;
+}
+
+.check-txt span {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
