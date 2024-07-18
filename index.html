@@ -499,67 +499,108 @@
 
     <footer class="foot">
       <div class="container">
-        <p class="foot-title">
-          <span>Chocolate</span> a delicious cure for a bad day
-        </p>
-        <p class="foot-soc-subtitle">Social networks</p>
-        <ul>
-          <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">inst</a>
-          </li>
-          <li><a href="/" target="_blank" rel="noopener noreferrer">fb</a></li>
-          <li><a href="/" target="_blank" rel="noopener noreferrer">tw</a></li>
-        </ul>
-        <p class="foot-contact-subtitle">Contact us</p>
-        <address class="foot-contact">
-          <ul class="foot-contact-list">
-            <li class="foot-contact-item">
-              <a class="foot-contact-link" href="tel:+380684439426"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li class="foot-contact-item">
-              <a class="foot-contact-link" href="mailto:simplychoc@gmail.com"
-                >simplychoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <nav class="foot-nav">
-          <ul class="foot-nav-list">
-            <li class="foot-nav-item">
-              <a
-                class="foot-nav-item-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Home</a
-              >
-            </li>
-            <li class="foot-nav-item">
-              <a
-                class="foot-nav-item-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="foot-nav-item">
-              <a
-                class="foot-nav-item-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-top">
+          <p class="foot-title">
+            <span>Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-soc-cont">
+            <p class="foot-soc-subtitle">Social networks</p>
+            <ul class="foot-soc-list">
+              <li class="foot-soc-item">
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="foot-soc-link"
+                >
+                  <svg width="24px" height="24px" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="foot-soc-item">
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="foot-soc-link"
+                >
+                  <svg width="24px" height="24px" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="foot-soc-item">
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="foot-soc-link"
+                >
+                  <svg width="24px" height="24px" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-cont">
+            <p class="foot-contact-subtitle">Contact us</p>
+            <address class="foot-contact">
+              <ul class="foot-contact-list">
+                <li class="foot-contact-item">
+                  <a class="foot-contact-link" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="foot-contact-item">
+                  <a
+                    class="foot-contact-link"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <nav class="foot-nav">
+            <ul class="foot-nav-list">
+              <li class="foot-nav-item">
+                <a
+                  class="foot-nav-item-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Home</a
+                >
+              </li>
+              <li class="foot-nav-item">
+                <a
+                  class="foot-nav-item-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="foot-nav-item">
+                <a
+                  class="foot-nav-item-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
     <!-- MODAL -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">X</button>
         <p class="title modal-title">
@@ -632,8 +673,8 @@
               <span>
                 <svg class="check-icon" width="10" height="10">
                   <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>I accept the terms and conditions of the
+                </svg> </span
+              >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></label
             >
           </div>

@@ -528,6 +528,19 @@ img {
 /**---------------FOOTER------------------*/
 .foot {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.footer-soc-cont {
+  margin-right: 50px;
+}
+
+.footer-contact-cont {
+}
+
+.footer-bottom {
 }
 
 .foot-title {
@@ -536,6 +549,8 @@ img {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #ffffff;
+  max-width: 300px;
+  margin-right: auto;
 }
 
 .foot-title span {
@@ -548,21 +563,38 @@ img {
   line-height: 1.29;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 14px;
 }
 
 .foot-contact-subtitle {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #ffffff;
+  margin-bottom: 14px;
 }
 
+.foot-soc-list {
+  display: flex;
+  gap: 14px;
+}
+.footer-soc-icon {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+
+.foot-soc-item {
+ 
+}
+.foot-soc-link {
+}
 .foot-contact {
 }
 .foot-contact-list {
 }
-.foot-contact-item {
+.foot-contact-item + .foot-contact-item {
+   margin-top: 4px;
 }
 
 .foot-contact-link {
@@ -574,9 +606,21 @@ img {
   color: #ffffff;
 }
 
+.footer-top {
+  display: flex;
+  padding-bottom: 50px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1136px;
+  height: 0px;
+}
+
+
 .foot-nav {
 }
 .foot-nav-list {
+  display: flex;
+  gap: 24px;
 }
 .foot-nav-item {
 }
@@ -725,7 +769,6 @@ img {
   line-height: normal;
   display: flex;
   align-items: center;
-  
 }
 
 .check-txt a {
