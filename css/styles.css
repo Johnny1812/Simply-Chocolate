@@ -731,12 +731,17 @@ img {
   right: 24px;
   width: 30px;
   height: 30px;
-  border: 1px solid #999d9d;
-  background-color: #d6dada;
+  border: none;
+  background-color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-x-close {
+  fill: transparent;
+  stroke: #404040;
 }
 
 .modal-title {
@@ -775,6 +780,8 @@ img {
   color: #ffffff;
   border: none;
 }
+
+
 
 .modal-label {
   display: block;
