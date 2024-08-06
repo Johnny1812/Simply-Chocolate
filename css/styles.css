@@ -35,6 +35,8 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -53,8 +55,10 @@ img {
 
 .title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px; */
+  font-size: 20px;
+  /* line-height: 1.17; */
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -67,7 +71,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1166px;
+  /* max-width: 1166px; */
+  max-width: 365px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -359,30 +364,34 @@ img {
 
 /**-----------------PRODUCTS---------------*/
 .products {
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 80px;
 }
 
 .products-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 22px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 18px;
+  /* gap: 24px 18px; */
+  gap: 22px;
 }
 
 .products-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  width: calc((100% - 54px) / 4);
+  /* width: calc((100% - 54px) / 4); */
+  width: 100%;
   padding: 32px 20px;
-
   background-color: #ffffff;
 }
 
 .products-img {
   margin-bottom: 8px;
+  margin: 0 auto;
 }
 
 .products-subtitle {
@@ -404,7 +413,6 @@ img {
   color: rgba(17, 17, 17, 0.7);
   margin-bottom: 18px;
   text-align: center;
-
 }
 
 .products-item-btn {
@@ -421,15 +429,18 @@ img {
 
 /**----------------TOP-----------------*/
 .top {
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 80px;
 }
 
 .top-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 32px;
 }
 
 .top-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -439,7 +450,8 @@ img {
 }
 
 .top-item {
-  width: calc((100% - 16px * 2) / 3);
+  /* width: calc((100% - 16px * 2) / 3); */
+  width: 100%;
   padding-bottom: 28px;
 }
 
@@ -490,23 +502,31 @@ img {
 
 /**-----------------------LOVED------------------*/
 .loved {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .loved-title {
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
+  margin-bottom: 74px;
 }
 
 .loved-list {
   display: flex;
-  gap: 28px;
-  margin-bottom: 50px;
+  /* gap: 28px; */
+  gap: 58px;
+  flex-wrap: wrap;
+  /* margin-bottom: 50px; */
+  margin-bottom: 32px;
 }
 
 .loved-item {
-  width: calc((100% - 56px) / 3);
-  padding: 56px 24px 24px 24px;
+  /* width: calc((100% - 56px) / 3); */
+  width: 100%;
+  /* padding: 56px 24px 24px 24px; */
+  padding: 56px 18px 18px 18px;
   background-color: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -519,6 +539,7 @@ img {
   left: 50%;
   top: -40px;
   transform: translate(-50%);
+  border-radius: 50%;
 }
 
 .loved-subtitle {
@@ -781,8 +802,6 @@ img {
   border: none;
 }
 
-
-
 .modal-label {
   display: block;
   font-size: 14px;
@@ -855,4 +874,104 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .products {
+    padding-top: 100px;
+  }
+
+  .products-title {
+    margin-bottom: 50px;
+  }
+
+  .products-list {
+    gap: 32px;
+  }
+
+  .products-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .top {
+    padding-top: 100px;
+  }
+
+  .top-title {
+    margin-bottom: 50px;
+  }
+
+  .top-list {
+    justify-content: center;
+  }
+
+  .top-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .loved {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .loved-title {
+    margin-bottom: 90px;
+  }
+
+  .loved-list {
+    gap: 58px 16px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .loved-item {
+    width: calc((100% - 16px) / 2);
+    padding: 56px 16px 16px 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1166px;
+  }
+
+  .products {
+    padding-top: 120px;
+  }
+
+  .products-list {
+    gap: 24px 18px;
+  }
+
+  .products-item {
+    width: calc((100% - 54px) / 4);
+  }
+  .top {
+    padding-top: 120px;
+  }
+  .top-item {
+    width: calc((100% - 32px) / 3);
+  }
+
+  .loved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .loved-list {
+    gap: 28px;
+  }
+
+  .loved-item {
+    width: calc((100% - 56px) / 3);
+    padding: 56px 24px 24px 24px;
+  }
 }
