@@ -158,6 +158,18 @@ img {
   padding: 395px 20px 20px 20px;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate_bg_mob_2x-min.jpg);
+  }
+}
+
 .hero-title {
   font-weight: 500;
   /* font-size: 28px; */
@@ -917,12 +929,24 @@ img {
   }
 
   .hero-container {
-      background-image: linear-gradient(
-      rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4)
-    ),
-    url(../images/chocolate_bg_tab-min.jpg);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate_bg_tab-min.jpg);
     padding: 670px 40px 40px 40px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate_bg_tab_2x-min.jpg);
+    }
   }
 
   .hero-title {
@@ -999,14 +1023,24 @@ img {
   }
 
   .hero-container {
-      background-image: linear-gradient(
-      rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4)
-    ),
-    url(../images/chocolate_main.jpg);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate_main.jpg);
     padding: 380px 40px 40px 40px;
   }
-
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate_main_2x-min.jpg);
+    }
+  }
   .products {
     padding-top: 120px;
   }
