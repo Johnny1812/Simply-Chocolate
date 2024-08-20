@@ -149,7 +149,7 @@ img {
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4)
     ),
-    url(../images/chocolate_main.jpg);
+    url(../images/chocolate_bg_mob-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -917,6 +917,11 @@ img {
   }
 
   .hero-container {
+      background-image: linear-gradient(
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/chocolate_bg_tab-min.jpg);
     padding: 670px 40px 40px 40px;
   }
 
@@ -994,6 +999,11 @@ img {
   }
 
   .hero-container {
+      background-image: linear-gradient(
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/chocolate_main.jpg);
     padding: 380px 40px 40px 40px;
   }
 
