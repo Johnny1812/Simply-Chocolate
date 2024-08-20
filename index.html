@@ -225,16 +225,37 @@
         </div>
       </section> -->
 
-      <!-- <section class="made">
+      <section class="made">
         <div class="container">
           <h2 class="title made-title">hOW IT’S <span>made?</span></h2>
           <div class="made-wrap">
-            <img
-              src="images/howitsmade.jpg"
-              alt="how made chocolate"
-              width="600"
-              height="400"
-            />
+            <picture>
+              <source
+                srcset="./images/howitsmade.jpg 1x, ./images/howitsmade_x2-min.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/howitsmade_tab-min.jpg    1x,
+                  ./images/howitsmade_tab_x2-min.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/howitsmade_mob-min.jpg     1x,
+                  ./images/howitsmade_mob_x2-min.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="images/howitsmade.jpg"
+                alt="how made chocolate"
+                width="600"
+                height="400"
+              />
+            </picture>
+
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -275,7 +296,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="products">
         <div class="container">

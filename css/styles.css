@@ -353,6 +353,7 @@ img {
 
 .made-wrap {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -367,7 +368,7 @@ img {
   line-height: 1.33;
   color: #111;
   margin-bottom: 28px;
-  min-width: 350px;
+  min-width: 307px;
 }
 
 .made-list {
@@ -963,6 +964,11 @@ img {
     margin-top: unset;
   }
 
+  .made-subtitle {
+
+    min-width: 350px;
+  }
+
   .products {
     padding-top: 100px;
   }
@@ -1040,6 +1046,10 @@ img {
         ),
         url(../images/chocolate_main_2x-min.jpg);
     }
+  }
+
+  .made-wrap {
+    flex-direction: row;
   }
   .products {
     padding-top: 120px;
